@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar{
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 10%),
+   0 2px 2px rgb(0 0 0 / 6%),0 0 2px rgb(0 0 0 / 7%);
+
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+}
+
+.navbar li {
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+.navbar a {
+  color: brown;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.navbar a:hover {
+  box-shadow: 0 1px 2px rgb(0 0 0 / 6%), 2px 0 3px rgb(0 80 200  / 10%);
+  color: black;
+}
+
+
+
+.left-list {
+  text-transform: uppercase;
+  flex: 3;
+  margin-left: 20px;
+  
+}
+
+.right-list {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.header {
+  min-height: 80vh;
+  width: 100%;
+  background-image: linear-gradient(#517e86c4, #949fdf1a), url(img/frances-gunn-QcBAZ7VREHQ-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+ 
+/* .header-div {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 4660%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; 
+  } */
+
+  .heading {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+  .heading-p {
+    color: #fff;
+    text-align: center;
+  }
+
+  .story-div {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    line-height: 28px;
+  }
+  .boy { 
+    height: 70vh;
+    width: 60%;
+    /* margin: auto; */
+    border-radius: 25px;
+    margin-left: 2%;
+  }
+  .text-box {
+    color: brown;
+  }
+
+  .story-header {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  .text-box p {
+    font-size: 18px;
+    width: 600px;
+  }
+  hr {
+    margin-top: 15px;
+  }
+
+  .course {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;   
+}
+.product-col {
+  color: aliceblue;
+  background-color: #a52a2a;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+}
+.product-col a {
+  display: inline-block;
+  background-color: #ffffff;
+  color: black;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 30px;
+}
