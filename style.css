@@ -1,17 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", serif;
 }
 
 .navbar{
-  width: 100%;
-  height: auto;
-  background-color: #fff;
-  padding: 20px;
-  margin-bottom: 10px;
-  box-shadow: 0 1px 3px rgb(0 0 0 / 10%),
-   0 2px 2px rgb(0 0 0 / 6%),0 0 2px rgb(0 0 0 / 7%);
+  padding: 2% 6%;
 
 }
 
@@ -27,6 +24,7 @@
 .navbar ul {
   display: flex;
   align-items: center;
+  list-style: none;
 }
 
 .navbar li {
@@ -41,8 +39,8 @@
   transition: 0.3s;
 }
 .navbar a:hover {
-  box-shadow: 0 1px 2px rgb(0 0 0 / 6%), 2px 0 3px rgb(0 80 200  / 10%);
-  color: black;
+  box-shadow: 0 1px 2px rgba(202, 70, 70, 0.06), 2px 0 3px rgb(0 80 200  / 10%), 0 0 20px 0px rgba(0, 0, 0, 0.2);
+  color: rgb(112, 216, 145);
 }
 
 
@@ -58,10 +56,14 @@
   display: flex;
   align-items: center;
   margin-right: 30px;
+  text-transform: uppercase;
+}
+.fa-phone-flip {
+  color: #a52a2a;
 }
 
 .header {
-  min-height: 80vh;
+  min-height: 90vh;
   width: 100%;
   background-image: linear-gradient(#517e86c4, #949fdf1a), url(img/frances-gunn-QcBAZ7VREHQ-unsplash.jpg);
   background-position: center;
@@ -71,39 +73,38 @@
 }
 
  
-/* .header-div {
-    width: 90%;
-    color: #fff;
-    position: absolute;
-    top: 4660%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; 
-  } */
+.header-div {
+  max-width: 800px;
+  text-align: center;
+  justify-self: center;
+  padding: 50px 0;
+  margin: 0 auto;
+    
+  }
 
   .heading {
     color: #fff;
     text-align: center;
     margin-bottom: 30px;
-    font-size: 30px;
+    font-size: 50px;
   }
   .heading-p {
     color: #fff;
     text-align: center;
-  }
+    font-size: 19px; 
+  } 
 
   .story-div {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 15px;
     line-height: 28px;
   }
   .boy { 
     height: 70vh;
     width: 60%;
-    /* margin: auto; */
     border-radius: 25px;
-    margin-left: 2%;
+    margin-top: 3%;
   }
   .text-box {
     color: brown;
@@ -118,33 +119,341 @@
 
   .text-box p {
     font-size: 18px;
-    width: 600px;
+    width: 500px;
   }
-  hr {
-    margin-top: 15px;
+  .text-box a {
+    display: inline-block;
+    background-color: brown;
+    color: whitesmoke;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 30px;
+    text-decoration: none;
+    transition: 0.8s;
+  }
+  .text-box a:hover {
+    color: rgb(166, 43, 43);
+    background-color: white;
+    padding: 10px 20px;
+    border: 2px solid black;
   }
 
-  .course {
+  .row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+  .product-box {
     width: 80%;
     margin: auto;
     text-align: center;
     padding-top: 100px;   
 }
 .product-col {
+  flex-basis: 31%;
   color: aliceblue;
   background-color: #a52a2a;
   border-radius: 10px;
   margin-bottom: 5%;
-  padding: 20px 12px;
+  padding: 25px 15px;
   box-sizing: border-box;
 }
 .product-col a {
   display: inline-block;
-  background-color: #ffffff;
-  color: black;
-  font-weight: 600;
+  background-color: rgba(255, 68, 0, 0.661);
+  color: whitesmoke;
+  font-weight: 700;
   padding: 10px 20px;
   border-radius: 25px;
   cursor: pointer;
   margin-top: 30px;
+  text-decoration: none;
+  transition: 0.7s;
+}
+.product-col a:hover {
+  color: rgba(255, 68, 0, 0.661);
+  background-color: white;
+  padding: 15px 25px;
+  border: 2px solid black;
+}
+.product-col h3 {
+  display: inline-block;
+  padding-right: 2%;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin: 20px 0;
+
+}
+.social a {
+  text-decoration: none;
+  margin-right: 20px;
+  color: #000;
+}
+.social ul {
+  list-style: none;
+}
+.fa-brands {
+  color: brown;
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+  font-size: 22px;
+}
+.footer-div {
+  display: flex;
+  justify-content: center;
+  margin-right: 30px; 
+}
+.footer-list a{
+  color: #000;
+  text-decoration: underline;
+}
+.footer-list {
+  list-style: none;
+  margin-bottom: 15px;
+}
+.footer-list p {
+  margin-bottom: 5%;
+}
+.footer h4 {
+  margin-bottom: 20px;
+}
+.consumer-p { 
+  text-align: center;
+  align-items: center;
+  color: gray;
+}
+.list-p {
+  margin-bottom: 3%;
+  color: grey;
+}
+.sub-header {
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(186, 172, 240, 0.1), rgba(96, 97, 100, 0.7)), 
+    url(img/pexels-n-voitkevich-8939514.jpg);;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: brown;
+  
+}
+.sub-header h1 {
+  margin-top: 100px;
+  text-transform: uppercase;
+  font-size: 50px;
+}
+.about-section {
+  background-color: greenyellow;
+  margin-top: 2%;
+}
+.megan {
+  height: 60vh;
+  width: 80vh;
+}
+.about-div {
+  background-color: orange;
+  box-sizing: border-box;
+  color: white;
+  padding: 30px 30px 0px 30px;
+}
+.about-div h2 {
+  color: #c93e0b;
+  text-transform: uppercase;
+  font-size: 23px;
+  margin-bottom: 15px;
+ 
+}
+.about-div h3 {
+  font-size: 22px;
+  margin-bottom: 25px;
+  line-height: 30px;
+}
+.about-div p {
+  line-height: 32px;
+}
+
+.contact-header {
+   height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(16, 16, 142, 0.1),rgba(18, 15, 15, 0.7) ), 
+    url(img/pexels-nc-farm-bureau-mark-2255801.jpg);;
+    background-position: 25% 75%;
+    background-size: cover;
+    text-align: center;
+    color: brown;
+    margin-bottom: 50px;
+}
+.contact-us {
+  width: 100%;
+  margin: auto;
+}
+
+.content-col {
+  flex-basis: 48%;
+  margin-bottom: 30px;
+  /* border: 2px dashed brown; */
+}
+
+.content-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+h3 {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+.content-col input, .content-col textarea {
+  width: 80%;
+  padding: 15px;
+  margin-bottom: 17px;
+  border: 1px solid #ccc;
+  outline: none;
+  box-sizing: border-box;
+  text-transform: uppercase;
+}
+textarea {
+  display: block;
+}
+button {
+  display: inline-block;
+  background-color: #a52a2a;
+  color: whitesmoke;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+button:active {
+  padding: 5px 5px 5px 5px;
+}
+
+.p-div {
+  margin-bottom: 50px;
+  border: 2px dashed brown;
+  border-radius: 5px;
+  padding: 20px 15px;
+  margin: 20px 20px;
+  
+}
+.row-div {
+  column-gap: 20px;
+  line-height: 28px;
+  color: #c93e0b;
+ 
+}
+.image-row {
+  height: 60vh;
+  width: 50vh;
+}
+.gallery-section {
+  margin: auto;
+}
+.gallery-row{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  margin: 70px 50px;
+}
+.product-header {
+    height: 60vh;
+    width: 100%;
+    background-image: url(img/pexels-vanessa-loring-5966141.jpg);
+    background-position: 35% 55%;
+    background-size: cover;
+    text-align: center;
+    color: brown;
+    margin-bottom: 50px;
+}
+.product-row {
+  height: 60vh;
+  width: 50vh;
+}
+.image-div a {
+  display: inline-block;
+  background-color: #a52a2a;
+  color: whitesmoke;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.image-div a:hover {
+  color: rgb(166, 43, 43);
+  background-color: white;
+  padding: 10px 20px;
+  border: 2px solid black;
+}
+
+
+@media(max-width: 700px) {
+  .header-div h2 {
+      font-size: 50px;
+  }
+  .header-div .heading-p {
+      margin: 10px 40px;
+      font-size: 20px;
+  }
+  .navbar-container ul li {
+      display: block;
+  }
+  .navbar-container {
+      position: fixed;
+      background: goldenrod;
+      height: 100vh;
+      width: 200px;
+      top: 0;
+      right: -200px;
+      text-align: left;
+      z-index: 2;
+      transition: 1.2s;
+  }
+  nav .fa-solid {
+      display: block;
+      color: brown;
+      margin: 10px;
+      font-size: 22px;
+      cursor: pointer;
+  }
+  .navbar-container ul {
+      padding: 30px;
+  }
+}
+@media (max-width: 700px) {
+  .row {
+      flex-direction: column;
+  }
+}
+@media (max-width: 700px) {
+  .boy {
+      margin-left: 0px;
+      margin-right: 10px;
+      min-width: 470px;
+  }
+}
+@media(max-width: 700px) {
+  .Sub-header h1 {
+      font-size: 24px;
+  }
 }
