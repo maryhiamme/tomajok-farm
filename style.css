@@ -39,11 +39,13 @@
   transition: 0.3s;
 }
 .navbar a:hover {
-  box-shadow: 0 1px 2px rgba(202, 70, 70, 0.06), 2px 0 3px rgb(0 80 200  / 10%), 0 0 20px 0px rgba(0, 0, 0, 0.2);
-  color: rgb(112, 216, 145);
+  box-shadow: 0 1px 2px rgba(202, 70, 70, 0.06), 2px 0 3px rgba(0 80 200  / 10%), 0 0 20px 0px rgba(0, 0, 0, 0.2);
+  color: black;
 }
-
-
+.logo {
+  height: 50px;
+  width: 50px;
+}
 
 .left-list {
   text-transform: uppercase;
@@ -58,16 +60,12 @@
   margin-right: 30px;
   text-transform: uppercase;
 }
-.fa-phone-flip {
-  color: #a52a2a;
-}
+
 
 .header {
   min-height: 90vh;
   width: 100%;
-  background-image: linear-gradient(#517e86c4, #949fdf1a), url(img/frances-gunn-QcBAZ7VREHQ-unsplash.jpg);
-  background-position: center;
-  background-size: cover;
+  background: linear-gradient(#517e86c4, #949fdf1a), url(img/frances-gunn-QcBAZ7VREHQ-unsplash.jpg), center/cover;
   position: relative;
   margin-bottom: 30px;
 }
@@ -243,10 +241,7 @@
 .sub-header {
     height: 50vh;
     width: 100%;
-    background-image: linear-gradient(rgba(186, 172, 240, 0.1), rgba(96, 97, 100, 0.7)), 
-    url(img/pexels-n-voitkevich-8939514.jpg);;
-    background-position: center;
-    background-size: cover;
+    background:  url(img/pexels-andreea-ch-371539-1166644.jpg), center/cover;
     text-align: center;
     color: brown;
   
@@ -289,9 +284,9 @@
 .contact-header {
    height: 50vh;
     width: 100%;
-    background-image: linear-gradient(rgba(16, 16, 142, 0.1),rgba(18, 15, 15, 0.7) ), 
-    url(img/pexels-nc-farm-bureau-mark-2255801.jpg);;
-    background-position: 25% 75%;
+    background: linear-gradient(rgba(16, 16, 142, 0.1),rgba(109, 106, 106, 0.7) ), 
+    url(img/pexels-nc-farm-bureau-mark-2255801.jpg);
+    background-position: 55% 35%;
     background-size: cover;
     text-align: center;
     color: brown;
@@ -305,7 +300,9 @@
 .content-col {
   flex-basis: 48%;
   margin-bottom: 30px;
-  /* border: 2px dashed brown; */
+}
+.contact-col {
+  display: flex;
 }
 
 .content-div {
@@ -345,7 +342,6 @@ button:active {
 }
 
 .p-div {
-  margin-bottom: 50px;
   border: 2px dashed brown;
   border-radius: 5px;
   padding: 20px 15px;
@@ -361,6 +357,7 @@ button:active {
 .image-row {
   height: 60vh;
   width: 50vh;
+  border-radius: 20px;
 }
 .gallery-section {
   margin: auto;
@@ -376,8 +373,8 @@ button:active {
 .product-header {
     height: 60vh;
     width: 100%;
-    background-image: url(img/pexels-vanessa-loring-5966141.jpg);
-    background-position: 35% 55%;
+    background-image: url(img/pexels-n-voitkevich-8939514.jpg);
+    background-position: 15% 70%;
     background-size: cover;
     text-align: center;
     color: brown;
@@ -386,6 +383,7 @@ button:active {
 .product-row {
   height: 60vh;
   width: 50vh;
+  border-radius: 20px;
 }
 .image-div a {
   display: inline-block;
@@ -395,7 +393,7 @@ button:active {
   padding: 10px 20px;
   border-radius: 25px;
   cursor: pointer;
-  margin-top: 30px;
+  margin: 20px 50px;
   text-decoration: none;
   transition: 0.3s;
 }
@@ -405,9 +403,16 @@ button:active {
   padding: 10px 20px;
   border: 2px solid black;
 }
+.image-div h4 {
+  display: inline;
+}
+span p {
+  padding-left: 15px;
+}
 
 
-@media(max-width: 700px) {
+
+@media(max-width: 700px),  (max-width: 768px), (max-width: 1200px),(max-width: 320px) {
   .header-div h2 {
       font-size: 50px;
   }
@@ -439,21 +444,73 @@ button:active {
   .navbar-container ul {
       padding: 30px;
   }
-}
-@media (max-width: 700px) {
   .row {
-      flex-direction: column;
+    flex-direction: column;
   }
-}
-@media (max-width: 700px) {
-  .boy {
-      margin-left: 0px;
-      margin-right: 10px;
-      min-width: 470px;
-  }
-}
-@media(max-width: 700px) {
   .Sub-header h1 {
-      font-size: 24px;
+    font-size: 24px;
   }
+  .boy {
+    margin-left: 0px;
+    margin-right: 10px;
+    min-width: 470px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .story-box {
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .product-box {
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .gallery-section {
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .about-seection {
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .contact-us {
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .address-row {
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+}
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .gallery-row, .product-row {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-reversed :first-child {
+    order: 0;
+  }
+
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+  .image-row {
+    margin: auto;
+    height: 30vh;
+    width: 30vh;
+  }
+
 }
